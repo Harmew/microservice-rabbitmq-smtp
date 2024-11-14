@@ -8,11 +8,11 @@ e-mails utiliza o serviço de mensageria da Google.
 
 A aplicação possui dois principais microserviços:
 
-1. User Service: Responsável pela criação do usuário. Este serviço recebe uma solicitação de criação de usuário e
+1. **User Service**: Responsável pela criação do usuário. Este serviço recebe uma solicitação de criação de usuário e
    publica uma mensagem no RabbitMQ com os detalhes do usuário recém-criado.
 
 
-2. Email Service: Responsável por consumir as mensagens enviadas pelo User Service e enviar um e-mail de boas-vindas ao
+2. **Email Service**: Responsável por consumir as mensagens enviadas pelo User Service e enviar um e-mail de boas-vindas ao
    usuário. Este serviço está integrado com o Google Messaging Service para o envio de e-mails.
 
 ### Estrutura dos Microserviços
