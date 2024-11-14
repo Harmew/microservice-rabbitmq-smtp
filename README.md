@@ -42,8 +42,8 @@ A aplicação possui dois principais microserviços:
 ### Fluxo de Comunicação
 
 1. O cliente faz uma requisição `POST /user` para o `User Service` para criar um novo usuário.
-2. O `User Service valida e salva o usuário no banco de dados MySQL e envia uma mensagem para o RabbitMQ contendo os dados do usuário.
-3. O `Email Service consome a mensagem do RabbitMQ, prepara o conteúdo do e-mail de boas-vindas e utiliza o Google Messaging Service para enviar o e-mail ao usuário.
+2. O `User Service` valida e salva o usuário no banco de dados MySQL e envia uma mensagem para o RabbitMQ contendo os dados do usuário.
+3. O `Email Service` consome a mensagem do RabbitMQ, prepara o conteúdo do e-mail de boas-vindas e utiliza o Google Messaging Service para enviar o e-mail ao usuário.
 
 ### Tecnologias e Ferramentas Utilizadas
 
